@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Noto Sans';
+    margin: 0;
+    padding: 0;
+    background-color: hsl(227, 75%, 14%);
+    color: white;
+    max-width: 1440px;
+}
+
+.container {
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: hsl(226, 25%, 17%);
+    border-radius: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.extensions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.extension-card {
+    background-color: hsl(226, 25%, 17%);
+    border: 1px solid hsl(226, 11%, 37%)s;
+    transition: background-color 0.2s;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.extension-info h3 {
+    padding: 0;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+
+}
+
+.extension-info p {
+    margin: 10px;
+    color: white;
+    font-size: 13px;
+    position: relative;
+    left: 40px;
+    bottom: 60px;
+    padding: 0 10px 0 10px;
+    inline-size: blo;
+}
+
+.extension-logo img {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.remove-btn {
+    background: hsl(226, 25%, 17%);
+    color: white;
+    border-radius: 5px;
+    border: #e1e4e8 1px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 3px;
+    float: right;
+    position: relative;
+    right: 230px;
+    bottom: 30px;
+}
+
+.remove-btn:hover {
+    background-color: #f3f4f6;
+    text-decoration: underline;
+}
+
+/* Status indicators */
+.status {
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 3px;
+    position: relative;
+    left: 230px;
+    bottom: 15px;
+}
+
+.status.active {
+    background-color: #e6ffed;
+    color: #22863a;
+}
+
+.status.inactive {
+    background-color: #fafbfc;
+    color: #586069;
+    border: 1px solid #e1e4e8;
+}
+
+/* Clear floats */
+.extension-card::after {
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .extension-info h3 {
+        font-size: 15px;
+    }
+    
+    .extension-info p {
+        font-size: 13px;
+    }
+}
